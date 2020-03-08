@@ -1,0 +1,12 @@
+[
+	{
+		"name": "@mmstudio/an000006",
+		"location": "@mmstudio/an000006/dist",
+		"main": "main"
+	},
+	{
+		"name": "node-html-parser",
+		"location": "node-html-parser/dist",
+		"main": "main"
+	}
+]
