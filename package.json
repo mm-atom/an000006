@@ -38,11 +38,15 @@
 		}
 	],
 	"license": "MIT",
+	"peerDependencies": {
+		"@mmstudio/an000002": "*"
+	},
 	"dependencies": {
 		"dot": "1.1.3",
 		"node-html-parser": "1.2.10"
 	},
 	"devDependencies": {
+		"@mmstudio/an000002": "latest",
 		"@types/dot": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",

@@ -1,9 +1,10 @@
 import * as dot from 'dot';
-import { HTMLElement } from 'node-html-parser';
+import aw2 from '@mmstudio/an000002';
 
-export default function render(dom_node: HTMLElement, data: unknown, tpl: string, position_id: string) {
+export default function render(mm: aw2, data: unknown, tpl: string, position_id: string) {
+	const node = mm.data.node;
 	const res = dot.template(tpl)(data);
-	const list = dom_node.querySelectorAll(`[data-mm-tpl=${position_id}]`);
+	const list = node.querySelectorAll(`[data-mm-tpl=${position_id}]`);
 	if (!list || list.length === 0) {
 		throw new Error(`cannot find node: ${position_id}`);
 	} else {

@@ -6,6 +6,11 @@ const { default: a } = require('../dist/index');
 test('render', async (t) => {
 	const root = await parse('<div><div data-mm-tpl="p01"></div></div>');
 	const div = root.firstChild;
-	await a(div, {}, '<foo>bar</foo>', 'p01');
+	const mm = {
+		data: {
+			node: div
+		}
+	};
+	await a(mm, {}, '<foo>bar</foo>', 'p01');
 	t.is(div.toString(), '<div><div data-mm-tpl="p01"><foo>bar</foo></div></div>');
 });
