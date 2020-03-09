@@ -8,5 +8,10 @@
 		"name": "node-html-parser",
 		"location": "node-html-parser/dist",
 		"main": "main"
+	},
+	{
+		"name": "dot",
+		"location": "dot",
+		"main": "doT"
 	}
 ]
